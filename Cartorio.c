@@ -156,8 +156,8 @@ int main() //principal
 			printf("Escolha a opção deseja do menu:\n\n");
 			printf("\t1 - Registrar nomes\n"); //\t espaço (t1,t2,t3 = sequencia numérica listada espaçada por linha)
 			printf("\t2 - Consultar CPF\n");
-			printf("\t3 - Deletar CPF\n\n");
-			printf("\t4 - Sair do sistema");
+			printf("\t3 - Deletar CPF\n");
+			printf("\t4 - Sair do sistema\n\n");
 	
 			printf("Escolha a opção:");
 
