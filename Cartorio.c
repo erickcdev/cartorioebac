@@ -43,7 +43,7 @@ int registro() // Função para cadastrar usuários no sistema
 	fprintf(file,","); // fprintf ao invés de dar o printf para o usuário ele dará para o arquivo
 	fclose(file); // fechar arquivo
 	
-	printf("Digite o sobre nome a ser cadastrado: "); // coletando informação do usuário
+	printf("Digite o sobrenome a ser cadastrado: "); // coletando informação do usuário
 	scanf("%s",sobrenome); // salvando dentro da string
 	
 	file=fopen(arquivo, "a"); // atualizar arquivo "arquivo"
@@ -130,9 +130,22 @@ int main() //principal
 {
 	int opcao=0; // definindo variável
 	int laco=1;
+	char senhadigitada[]="a";
+	int comparacao;
 	
-	for(laco=1;laco=1;) //++ adiciona +1 (x=1;x=10;x++) x=1; x=1+1, etc...
+	printf("### Cartório da EBAC ###\n\n");
+	printf("Login de administrador! \n\nDigite a sua senha: ");
+	scanf ("%s",senhadigitada); //%s falando de uma string
+	
+	comparacao = strcmp(senhadigitada, "admin");
+	
+	if(comparacao == 0)
+	
 	{
+	
+		system ("cls");
+		for(laco=1;laco=1;) //++ adiciona +1 (x=1;x=10;x++) x=1; x=1+1, etc...
+		{
 			system("cls"); // limpar a tela
 	
 	
@@ -174,11 +187,14 @@ int main() //principal
 				default: //diferente do padrão; fim do switch (opção inexistente)
 				printf("Essa opção não está disponível\n"); 
 				system("pause");
-				break;
-			
-			
+				break;			
 			}//fim
-				
-			
+					
+		}
+		
+		
 	}
+	
+	else
+		printf("Senha incorreta");
 }
