@@ -144,6 +144,7 @@ int main() //principal
 			printf("\t1 - Registrar nomes\n"); //\t espaço (t1,t2,t3 = sequencia numérica listada espaçada por linha)
 			printf("\t2 - Consultar CPF\n");
 			printf("\t3 - Deletar CPF\n\n");
+			printf("\t4 - Sair do sistema");
 	
 			printf("Escolha a opção:");
 
@@ -163,6 +164,11 @@ int main() //principal
 								
 				case 3: //opção 3
 				deletar();	// chamada de função			
+				break;
+				
+				case 4:
+				printf ("Obrigado por utilizar o sistema!\n");
+				return 0; // sair do sistema
 				break;
 												
 				default: //diferente do padrão; fim do switch (opção inexistente)
